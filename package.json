@@ -1,0 +1,17 @@
+{
+  "name": "in-class",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "begin-liteserver": "lite-server --baseDir=\"public\"",
+    "do_cssprecompiler": "node-sass src/scss -wo public/assets/css",
+    "start": "concurrently \"npm run do_cssprecompiler\" \"npm run begin-liteserver\""
+  },
+  "author": "Pui Kwan Lung",
+  "license": "private",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1"
+  }
+}
