@@ -135,7 +135,7 @@ header .mobile {
   background-color: #f0f1f7;
   color: #9fa2b4; }
 
-/* Desktop - Set as Medium Bootstrap reakpoint*/
+/* Desktop - Set as Medium Bootstrap breakpoint, 768px */
 @media only screen and (min-width: 768px) {
   header {
     background-color: #f7f8fc;

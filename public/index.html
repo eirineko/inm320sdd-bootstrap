@@ -13,6 +13,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Header -->
     <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0">
       <div class="navbar-brand col-12 col-md-3 col-lg-2 me-0 ps-4 py-4 fs-6">
         <img src="assets/images/logo.png" alt="Dashboard kit" width="32" height="32" class="d-inline-block align-middle me-1" />
@@ -33,6 +34,7 @@
       </div>
     </header>
 
+    <!-- Sidebar -->
     <div class="container-fluid">
       <div class="row">
         <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse px-0">
@@ -89,12 +91,17 @@
                   Subscription
                 </a>
               </li>
+              <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in as different user</button>
+              </li>
             </ul>
           </div>
         </nav>
 
         <main class="col-md-9 ms-sm-auto col-lg-10">
           <div class="d-flex justify-content-center flex-wrap flex-nowrap align-items-center flex-md-row panel-box gap-3 mb-4 mx-3 ticket-box">
+            <!-- Tickets boxes -->
             <div class="panel round-box">
               <span class="t-title text-gray">Unresolved</span>
               <span class="b-title">60</span>
@@ -113,6 +120,7 @@
             </div>
           </div>
 
+          <!-- Today's trend -->
           <div class="round-box row mb-4 mx-0 mx-3">
             <div class="graph-left-box col-md-8 py-4 ps-4 pe-4 col-sm-12">
               <p class="fs-5 mb-1">Today's trends</p>
@@ -155,6 +163,7 @@
             </div>
           </div>
 
+          <!-- Other content boxes-->
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap flex-column flex-md-row mb-4 gap-3 mx-3">
             <div class="panel round-box py-4">
               <div class="d-flex justify-content-between px-4">
@@ -216,6 +225,38 @@
             </div>
           </div>
         </main>
+      </div>
+    </div>
+
+    <!-- Form: Sign in as different user -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="/" method="post">
+              <fieldset>
+                <legend class="modal-title" id="exampleModalLabel">Sign in as different user</legend>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" />
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
 
